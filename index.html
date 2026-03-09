@@ -4,13 +4,103 @@
     <title>
       Page Title Goes Here
     </title>
+    <!-- <link rel="stylesheet" type="text/css" href="20colors.css"> -->
+    <style>
+      :root {
+        --Red: #e6194B;
+        --Green: #3cb44b;
+        --Yellow: #ffe119;
+        --Blue: #4363d8;
+        --Orange: #f58231;
+        --Purple: #911eb4;
+        --Cyan: #42d4f4;r
+        --Magenta: #f032e6;
+        --Lime: #bfef45;
+        --Pink: #fabed4;
+        --Teal: #469990;
+        --Lavender: #dcbeff;
+        --Brown: #9A6324;
+        --Beige: #fffac8;
+        --Maroon: #800000;
+        --Mint: #aaffc3;
+        --Olive: #808000;
+        --Apricot: #ffd8b1;
+        --Navy: #000075;
+        --Grey: #a9a9a9;
+        --White: #ffffff;
+        --Black: #000000;
+      }
+
+      @font-face {
+        font-family: legendarydeeds;
+        src: url(LegendaryDeedsMedium_alpha20260113a.ttf);
+      }
+      body {
+        background-color: var(--Beige);
+        font-family: legendarydeeds;
+        color: black;
+        text-align: center;
+      }
+      h1 {
+        color: var(--Orange);
+        font-size: 36px;
+      }
+      div.header {
+        background-color: var(--Apricot);
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .game-text {
+        white-space: pre-line;
+        height: 110px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+      }
+
+      .game-input {
+        display: flex;
+      }
+
+      .user-input {
+        flex: 1;
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      .submit-btn {
+        padding: 5px 10px;
+        margin-left: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <h1>
-      Here is a Heading.
-    </h1>
+    <div class="header">
+      <h1>
+        Here is a Heading.
+      </h1>
+      <br>
+      <center>
+        <div id="game-text" class="game-text">
+        </div>
+        <input id="user-input" class="user-input" type="text" placeholder="Username">
+        <button id="submit-btn" class="submit-btn">
+          Submit
+        </button>
+      </center>
+    </div>
+    <script src="login.js"></script>
     <p>
       Here is a paragraph
     </p>
+    <br>
+    <a id="main-link" href="portal.html" style="display:none;">
+      <button>
+        Enter Main Page
+      </button>
+    </a>
   </body>
 </html>
