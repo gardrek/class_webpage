@@ -2,4 +2,4 @@
 
 This repository hosts my implementation of the Bridge2Technology class webpage course.
 
-This should not do anything weird./
+This is a test of the emergency broadcast system. This should not do anything weird.
