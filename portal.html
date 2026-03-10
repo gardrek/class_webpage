@@ -38,6 +38,26 @@
         padding: 20px;
         text-align: center;
       }
+      img {
+        width: 200px;
+        height: 125px;
+        border-radius: 50%;
+        border: 3px solid green;
+        margin-top: 10px;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: lightgray;
+        padding: 20px;
+      }
+      .flex-item {
+        background-color: steelblue;
+        color: white;
+        padding: 20px;
+        width: 30%;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -56,9 +76,9 @@
       <br>
       <div class="grid-container">
         <div class="grid-item">
-          <a href="hyperlink" style="color: black" target="_blank">
+          <a href="https://gardrek.itch.io" style="color: black" target="_blank">
             <button class="button-transition">
-              Button Name
+              Visit my itch.io page or else!
             </button>
           </a>
         </div>
@@ -85,6 +105,29 @@
         <div class="grid-item">
           <!-- empty -->
         </div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <p>
+          Check out my favorite website:
+          <a href="https://wikipedia.org/" target="_blank">
+            Wikipedia
+          </a>
+        </p>
+      </div>
+      <div class="flex-item">
+        <a href="https://gardrek.itch.io/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Palm_Island_R.svg" alt="Sample Image">
+        </a>
+      </div>
+      <div class="flex-item">
+        <p>
+          Email me at the following address
+          <a href="mailto:@@@@@@djm.dot.gov.ny.us" target="_blank">
+            @@@@@@djm.dot.gov.ny.us
+          </a>
+        </p>
       </div>
     </div>
   </body>
