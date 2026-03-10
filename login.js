@@ -51,4 +51,4 @@ submitBtn.addEventListener("click", async () => {
     }
 });
 
-print("Log-in Page\n\nWelcome! Please enter your username:");
+print("Log-in Page \n\nWelcome! Please enter your username:");
