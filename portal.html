@@ -9,7 +9,7 @@
         background-color: powderblue;
         font-family: Arial;
         color: black;
-        text-align: center;
+        /*text-align: center;*/
       }
       div.header {
         background-color: tomato;
@@ -130,5 +130,22 @@
         </p>
       </div>
     </div>
+    <pre>
+      <mark>
+def quote_block(block):
+    i = 0
+    for s in block:
+        if i == 0:
+            print(f'{' ' * 7}{OPEN_QUOTE}', end = "")
+        else:
+            print(f'{' ' * 8}', end = "")
+        print(apostrophate(s), end = "")
+        i += 1
+        if i == len(block):
+            print(CLOSE_QUOTE)
+        else:
+            print()
+        delay(1)</mark>
+    </pre>
   </body>
 </html>
