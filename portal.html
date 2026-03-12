@@ -25,11 +25,22 @@
         color: navy;
         font-size: 36px;
       }
+      .button-transition {
+        background-color: navy;
+        color: white;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+      .button-transition:hover {
+        background-color: tomato;
+      }
       .grid-container {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 10px;
-        background-color: #f8f8f8
+        background-color: #f8f8f8;
         padding: 10px;
       }
       .grid-item {
@@ -241,6 +252,9 @@ def quote_block(block):
             </td>
           </tr>
         </table>
+      </div>
+      <div class="grid-item">
+        <!-- empty -->
       </div>
       <div class="grid-item">
         <h2>
