@@ -86,6 +86,33 @@
       .table-style2 th {
         background-color: lightgreen;
       }
+      div.mycontainer {
+        width: 66%;
+        overflow: auto;
+      }
+      div.mycontainer div {
+        width: 50%;
+        float: left;
+      }
+      .list-style1 {
+        list-style-type: square;
+        color: darkblue;
+        text-align: left;
+        margin: 20px;
+      }
+      .list-style2 {
+        list-style-type: circle;
+        color: darkgreen;
+        text-align: left;
+        margin: 20px;
+      }
+      .video {
+        width: 35%;
+        margin: 10px auto;
+        text-align: center;
+        border: 3px solid green;
+        background-color: darkturquoise;
+      }
     </style>
   </head>
   <body>
@@ -247,44 +274,52 @@ def quote_block(block):
         </table>
       </div>
     </div>
-    <h2>
-      My Favorite Foods
-    </h2>
-    <ul>
-      <li>
-        Food One
-      </li>
-      <li>
-        Food Two
-      </li>
-      <li>
-        Food Three
-      </li>
-    </ul>
-    <h2>
-      My Favorite Drinks
-    </h2>
-    <ul>
-      <li>
-        Drink One
-      </li>
-      <li>
-        Drink Two
-      </li>
-      <li>
-        Drink Three
-      </li>
-    </ul>
+    <div class="mycontainer">
+      <div style="background-color: lightcyan;">
+        <h2>
+          My Favorite Foods
+        </h2>
+        <ul class="list-style1">
+          <li>
+            Food One
+          </li>
+          <li>
+            Food Two
+          </li>
+          <li>
+            Food Three
+          </li>
+        </ul>
+      </div>
+      <div style="background-color: aquamarine;">
+        <h2>
+          My Favorite Drinks
+        </h2>
+        <ul class="list-style2">
+          <li>
+            Drink One
+          </li>
+          <li>
+            Drink Two
+          </li>
+          <li>
+            Drink Three
+          </li>
+        </ul>
+      </div>
+    </div>
     <br />
     <br />
     <br />
-    <h2>
-      Video of the Day
-    </h2>
-    <video width="480" height="360" controls>
-      <source src="assets/BBH_gravitational_lensing_of_gw150914.webm.1080p.vp9.webm">
-      If you see this the embed thingy done goofed.
-    </video>
+    <div class="video">
+      <h2>
+        Video of the Day
+      </h2>
+      <video width="480" height="360" controls>
+        <source src="assets/BBH_gravitational_lensing_of_gw150914.webm.1080p.vp9.webm">
+        If you see this the embed thingy done goofed.
+      </video>
+    </div>
     <h2>
       Classic Radio Drama Corner
     </h2>
