@@ -59,6 +59,33 @@
         width: 30%;
         text-align: center;
       }
+      .table-style1 {
+        width: 80%;
+        margin: 20px auto;
+        border: 2x solid navy;
+      }
+      .table-style1 th, .table-style1 td {
+        border: 1px solid navy;
+        padding 10px;
+        text-align: center;
+      }
+      .table-style1 th {
+        background-color: lightblue;
+      }
+      .table-style2 {
+        width: 60%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border: 2px solid darkgreen;
+      }
+      .table-style2 th, .table-style2 td {
+        border: 1px solid darkgreen;
+        padding: 10px;
+        text-align: center;
+      }
+      .table-style2 th {
+        background-color: lightgreen;
+      }
     </style>
   </head>
   <body>
@@ -161,7 +188,7 @@ def quote_block(block):
         <h2>
           My Hobbies
         </h2>
-        <table>
+        <table class="table-style1">
           <tr>
             <th>
               Hobby
@@ -192,7 +219,7 @@ def quote_block(block):
         <h2>
           My Favorite Movies
         </h2>
-        <table>
+        <table class="table-style2">
           <tr>
             <th>
               Movie
@@ -268,10 +295,10 @@ def quote_block(block):
     <h2>
       A YouTube Video of No Particular Significance
     </h2>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/t-mOfXhgfQY" />
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/t-mOfXhgfQY"></iframe>
     <h2>
       Embedded Website
     </h2>
-    <iframe width="700" height="466" style="border: none" src="https://quirkycort.github.io/gears/public/" />
+    <iframe width="700" height="466" src="https://quirkycort.github.io/gears/public/"></iframe>
   </body>
 </html>
